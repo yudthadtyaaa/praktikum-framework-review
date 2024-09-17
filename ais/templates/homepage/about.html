@@ -1,0 +1,23 @@
+{% extends 'homepage/layout.html' %}
+
+{% block title %}
+  Tentang
+{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - AIS</title>
+    {% load django_bootstrap5 %}
+    {% bootstrap_css %}
+  </head>
+  <body>
+    {% block content %}
+      <div class="hero bg-light p-5 rounded-lg m-3">
+        <h1 class="display-4">Apa itu AIS?</h1>
+      </div>
+    {% endblock %}
+  </body>
+</html>
